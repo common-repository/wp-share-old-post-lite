@@ -1,0 +1,93 @@
+.settings p {
+	display: block;
+	margin-bottom: 20px;
+	background: -moz-linear-gradient(50% 50% 180deg,#C91A1A, #DB2E2E, #0C990C 0%); 
+	background: -webkit-gradient(linear, 50% 50%, 0% 50%, from(#C90202), to(#009C05), color-stop(0,#00AB00));
+	border-radius: 8px;
+	-moz-border-radius: 6px;
+	border: 1px solid #555555;
+	width: 36px;
+	position: relative;
+	height: 15px;
+}
+
+
+.check { 
+	display: block;
+	width: 20px;
+	height: 13px;
+	border-radius: 8px;
+	-moz-border-radius: 6px;
+	background: -moz-linear-gradient(19% 75% 90deg,#FFFFFF, #A1A1A1);
+	background: #fff -webkit-gradient(linear, 0% 0%, 0% 100%, from(#A1A1A1), to(#FFFFFF));
+	border: 1px solid #e5e5e5;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+}
+
+
+
+
+.checkalist
+{
+    display: none !important;
+}
+@-webkit-keyframes labelON {
+	0% {
+		top: 0px;
+    	left: 0px;
+	}
+	
+	100% { 
+		top: 0px;
+    	left: 14px;
+	}
+}
+
+input[type=checkbox]:checked + label.check {
+	top: 0px;
+	left: 14px;
+	-webkit-animation-name: labelON; 
+  	-webkit-animation-duration: .2s; 
+  	-webkit-animation-iteration-count: 1;
+  	-webkit-animation-timing-function: ease-in;
+  	-webkit-box-shadow: #244766 -1px 0px 3px;
+  	-moz-box-shadow: #244766 -1px 0px 3px;
+}
+
+@-webkit-keyframes labelOFF {
+	0% {
+		top: 0px;
+    	left: 16px;
+	}
+	
+	100% { 
+		top: 0px;
+    	left: 0px;
+	}
+}
+
+input[type=checkbox] + label.check {
+	top: 0px;
+	left: 0px;
+	-webkit-animation-name: labelOFF; 
+  	-webkit-animation-duration: .2s; 
+  	-webkit-animation-iteration-count: 1;
+  	-webkit-animation-timing-function: ease-in;
+  	-webkit-box-shadow: #244766 1px 0px 3px;
+  	-moz-box-shadow: #244766 1px 0px 3px;
+}
+
+label.info {
+	position: absolute;
+	color: #000;
+	top:0px;
+	left: 50px;
+	line-height: 15px;
+	width: 200px;
+}
+
+
+
+
